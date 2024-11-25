@@ -2,6 +2,8 @@ package lesson1;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Main {
 	
 	public static final String RESET = "\u001B[0m";
@@ -47,6 +49,9 @@ public class Main {
     	num = scanKeyBoard.nextInt();
     	scanKeyBoard.close();
     	System.out.println("Введенное вами число = " + num);
+    	
+    	num = Integer.parseInt(JOptionPane.showInputDialog("Введите целое число"));
+    	JOptionPane.showMessageDialog(null, "Введенное число = " + num, "К сведению", JOptionPane.INFORMATION_MESSAGE);
     	
     }
    
