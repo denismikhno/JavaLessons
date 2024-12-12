@@ -1,0 +1,10 @@
+# Удаляем все ненужное из родительской папки JavaLessons
+bin/
+.classpath
+.project
+# Удаляем все ненужное из вложенных папок будущих проектов
+*/.settings
+*/bin/
+*/.classpath
+*/.gitignore
+*/.project
